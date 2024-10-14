@@ -90,21 +90,6 @@ function calculateMBTI() {
   document.getElementById('mbtiForm').classList.add('hidden');
 }
 
-function restartQuiz() {
-  // Menghapus hasil yang ditampilkan
-  document.getElementById('result').innerText = "";
-  document.getElementById('result').classList.add('hidden');
-
-  // Menampilkan kembali form pertanyaan
-  document.getElementById('mbtiForm').classList.remove('hidden');
-
-  // Menyembunyikan tombol restart
-  document.getElementById('restartBtn').classList.add('hidden');
-  
-  // Reset form
-  document.getElementById('mbtiForm').reset();
-}
-
 const cards = document.querySelectorAll('.card');
 cards.forEach((card) => {
   card.addEventListener('click', () => {
